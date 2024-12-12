@@ -1,0 +1,13 @@
+package com.dev.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BookController {
+	
+	public Stirng welcome() {
+		return new ResponseEntity<String>("Welcome to Book API", HttpStatus.OK);
+	}
+}

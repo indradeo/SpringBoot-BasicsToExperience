@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: 17-Actuator_App
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        

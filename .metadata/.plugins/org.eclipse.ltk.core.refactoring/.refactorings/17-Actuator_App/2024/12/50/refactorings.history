@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.dev.thymeleaf&apos; to &apos;com.dev&apos;&#x0D;&#x0A;- Original project: &apos;17-Actuator_App&apos;&#x0D;&#x0A;- Original element: &apos;17-Actuator_App/src/main/java/com.dev.thymeleaf&apos;&#x0D;&#x0A;- Renamed element: &apos;17-Actuator_App/src/main/java/com.dev&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.dev.thymeleaf&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.dev.thymeleaf" name="com.dev" qualified="false" references="true" stamp="1733630313464" textual="false" version="1.0"/>
+</session>

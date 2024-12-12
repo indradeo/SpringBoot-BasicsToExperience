@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: 18-SBMS_Service_Registry
+    
+
+server:
+  port: 8761 #Automatically register with Eureka Server
+  
+eureka:
+  client:
+    register-with-eureka: false #Disable self registry
+    
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'

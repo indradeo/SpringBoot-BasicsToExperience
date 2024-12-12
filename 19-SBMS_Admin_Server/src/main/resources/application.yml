@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: 19-SBMS_Admin_Server
+
+server:
+  port: 1111
+  
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

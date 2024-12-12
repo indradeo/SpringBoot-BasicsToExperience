@@ -1,0 +1,22 @@
+package com.dev.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.dev.entity.Book;
+
+@RestController
+public class BookController {
+	
+	private Map<Integer ,Book> bookData= new HashMap<>();
+	
+	@GetMapping("/")
+	public ResponseEntity<String> welcome() {
+		return new ResponseEntity<String>("Welcome to Book API", HttpStatus.OK);
+	}
+}

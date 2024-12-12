@@ -1,0 +1,55 @@
+package com.dev.bookapp.controller;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.dev.bookapp.entity.Book;
+import com.dev.bookapp.repository.BookRepo;
+import com.dev.bookapp.util.BookBinding;
+
+import jakarta.annotation.PostConstruct;
+
+@Controller
+public class BookController {
+	
+	@Autowired
+	BookRepo repo;
+	
+	private static void init(Model model) {
+		model.addAttribute("bookBinding", new BookBinding());
+	}
+	
+	@GetMapping
+	public String loadIndexPage(Model model) {
+		init(model);
+		return "index";
+	}
+	
+	@GetMapping("/book")
+	public ModelAndView getBookById(@RequestParam("id") Integer id) {
+		
+		ModelAndView mav= new ModelAndView();
+		Optional<Book> book=repo.findById(id);
+		if(book.isPresent()) {
+			mav.addObject("book", book.get());
+		}
+		mav.setViewName("index");
+		
+		return mav;
+	}
+	
+	@PostMapping("/update")
+	public String updateBook(Book b,Model model) {
+		repo.save(b);
+		init(model);
+		return "index";
+	}
+
+}

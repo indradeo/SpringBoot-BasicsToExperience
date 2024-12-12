@@ -1,0 +1,39 @@
+package com.dev.h2db.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.dev.h2db.entity.Product;
+import com.dev.h2db.repository.ProductRepo;
+
+@Controller
+public class ProductController {
+	
+	@Autowired
+	private ProductRepo repo;
+	
+	@GetMapping("/")
+	public String LoadIndexPage() {
+		return "index";
+	}
+	
+	@GetMapping("/viewProducts")
+	public String getProducts(Model model) {
+		
+		List<Product> products=repo.findAll();
+		model.addAttribute("products",products);
+		return "products";
+	}
+	
+	@PostMapping("/save")
+	public String saveProduct(@ModelAttribute Product product) {
+		repo.save(product);
+		return "redirect:/index";
+	}
+}

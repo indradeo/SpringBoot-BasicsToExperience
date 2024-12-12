@@ -1,0 +1,12 @@
+{
+	"id": 101,
+	"name": "Dev",
+	"email": "abcd@gmail.com",
+	"phno": 9876543210,
+	"address": {
+		"pincode": 825312,
+		"city": "Bishnugarh",
+		"district": "Hazaribag",
+		"state": "Jharkhand"
+	}
+}

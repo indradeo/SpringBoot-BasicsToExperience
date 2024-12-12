@@ -1,0 +1,38 @@
+package com.dev.bookapp.controller;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.dev.bookapp.entity.Book;
+import com.dev.bookapp.repository.BookRepo;
+
+@Controller
+public class BookController {
+	
+	@Autowired
+	BookRepo repo;
+	
+	@GetMapping("/book")
+	public ModelAndView getBookById(@RequestParam(required = false) Integer id) {
+		
+		ModelAndView mav= new ModelAndView();
+		if(id==null) {
+			id=0;
+		}
+		Optional<Book> book=repo.findById(id);
+		if(book.isPresent()) {
+			mav.addObject("book", book.get());
+		}else {
+			mav.addObject("book", new Book());
+		}
+		mav.setViewName("index");
+		
+		return mav;
+	}
+
+}
