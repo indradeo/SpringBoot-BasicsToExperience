@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: 23-SBMS_ConfigServer_App
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/indradeo/configuration_properties
+          clone-on-start: true
