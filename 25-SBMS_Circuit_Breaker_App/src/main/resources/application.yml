@@ -1,10 +1,10 @@
 server:
   port: 8086
+  
 spring:
   application:
-    name: 24-SBMS_Circuit_Breaker_App
-    
-    
+    name: loan-service
+
 management:
   endpoint:
     health:
@@ -16,15 +16,16 @@ management:
   health:
     circuitbreakers:
       enabled: true
+
 resilience4j:
   circuitbreaker:
     instances:
       loan-service:
-        registerHealthIndicator: true
+        registerHealthIndicator: true 
+#       slidingWindowSize: 10
+        slidingWindowType: COUNT_BASED
         failureRateThreshold: 50
         minimumNumberOfCalls: 5
-        automaticTransitionFromOpenToHalfOpenEnabled: true
-        waitDurationInOpenState: 5s
+        waitDurationInOpenState: 10s
         permittedNumberOfCallsInHalfOpenState: 3
-        #slidingWindowSize: 10
-        slidingWindowType: COUNT_BASED
+        automaticTransitionFromOpenToHalfOpenEnabled: true

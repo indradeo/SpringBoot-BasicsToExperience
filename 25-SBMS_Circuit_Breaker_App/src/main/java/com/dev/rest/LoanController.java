@@ -11,6 +11,7 @@ import com.dev.service.LoanService;
 @RestController
 public class LoanController {
 	
+
 	@Autowired
 	private LoanService loanService;
 	
