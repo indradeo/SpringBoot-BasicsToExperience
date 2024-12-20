@@ -1731,3 +1731,201 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.core.resources 4 273 2024-12-20 17:27:23.278
+!MESSAGE Problems cleaning up history store.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Could not read metadata for 'D:\AshokIT\.metadata\.plugins\org.eclipse.core.resources\.projects\25-SBMS_Circuit_Breaker_App\.indexes\e4\b9\22\81\15\d4\history.index'. Unexpected version: 0.
+	at org.eclipse.core.internal.localstore.Bucket.loadEntries(Bucket.java:361)
+	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:330)
+	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:297)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:103)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:114)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:114)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:114)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:114)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:114)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:114)
+	at org.eclipse.core.internal.localstore.BucketTree.accept(BucketTree.java:78)
+	at org.eclipse.core.internal.localstore.HistoryStore2.clean(HistoryStore2.java:168)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1197)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2421)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:554)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-12-20 17:27:23.278
+!MESSAGE Could not read metadata for 'D:\AshokIT\.metadata\.plugins\org.eclipse.core.resources\.projects\25-SBMS_Circuit_Breaker_App\.indexes\e4\b9\22\81\15\d4\history.index'. Unexpected version: 0.
+!SESSION 2024-12-20 18:22:40.850 -----------------------------------------------
+eclipse.buildId=4.18.1.202305021758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-20 18:22:45.162
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-20 18:23:41.264
+!MESSAGE Logback config file: D:\AshokIT\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-12-20 18:24:34.294
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-12-20 18:24:34.294
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:05.527
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-20 18:25:05.577
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 8432
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-20 18:25:19.236
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\indra'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:20.067
+!MESSAGE Boot project ADDED: 01-SpringBootApp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:20.070
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:20.077
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:20.108
+!MESSAGE Boot project ADDED: 02-JpaRepo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:20.425
+!MESSAGE Boot project ADDED: 03-GenericIdentifier
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:20.570
+!MESSAGE Boot project ADDED: 04-Profiling
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:20.670
+!MESSAGE Boot project ADDED: 05-SpringWebApp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:20.808
+!MESSAGE Boot project ADDED: 06-web-BookApp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:20.853
+!MESSAGE Boot project ADDED: 07-Web_H2_DB_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:20.889
+!MESSAGE Boot project ADDED: 08-Web_H2DB_Thymeleaf_Validater
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:20.924
+!MESSAGE Boot project ADDED: 09-Web_Mvc_Exception_Handling
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:21.102
+!MESSAGE Boot project ADDED: 11-User_REST_API
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:21.131
+!MESSAGE Boot project ADDED: 12-Book_REST_API
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:21.280
+!MESSAGE Boot project ADDED: 13-IRCTC_REST_API
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:21.309
+!MESSAGE Boot project ADDED: 14-Make_My_Trip_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:21.337
+!MESSAGE Boot project ADDED: 15-Async_Client_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:21.466
+!MESSAGE Boot project ADDED: 16-Rest_Api_Exception_Handling
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:21.493
+!MESSAGE Boot project ADDED: 17-Actuator_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:21.631
+!MESSAGE Boot project ADDED: 18-SBMS_Service_Registry
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:21.664
+!MESSAGE Boot project ADDED: 19-SBMS_Admin_Server
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:21.700
+!MESSAGE Boot project ADDED: 20-SBMS_Greet_API
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:21.732
+!MESSAGE Boot project ADDED: 21-SBMS_Welcome_API
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:21.765
+!MESSAGE Boot project ADDED: 22-SBMS_Redis_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:21.899
+!MESSAGE Boot project ADDED: 23-SBMS_ConfigServer_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:21.931
+!MESSAGE Boot project ADDED: 24-SBMS_GreetApi_configServer_Client
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:22.115
+!MESSAGE Boot project ADDED: 25-SBMS_Circuit_Breaker_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:22.221
+!MESSAGE Boot project ADDED: 26-SBMS_Circuit_Breaker_RateService_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:22.266
+!MESSAGE Boot project ADDED: 27-Spring_Security_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:22.296
+!MESSAGE Boot project ADDED: 28-Spring_Security_JDBC_Auth_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:22.451
+!MESSAGE Boot project ADDED: 29-Spring_Security_InMemory_Auth_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:22.476
+!MESSAGE Boot project ADDED: 30-Spring_Security_UserDetailsService_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:22.503
+!MESSAGE Boot project ADDED: 31-Spring_Security_OAuth2_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:22.533
+!MESSAGE Boot project ADDED: 32-Spring_Security_JWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:22.534
+!MESSAGE Boot project ADDED: 33-Spring_Batch_App
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:25:22.558
+!MESSAGE Boot project ADDED: in.dev
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-20 18:25:50.569
+!MESSAGE executing callback sts4.classpath.bZBCtVIZ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-12-20 18:25:50.570
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:27:46.866
+!MESSAGE Classpath changed for project: 34-Spring_Scheduling
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:27:53.430
+!MESSAGE Classpath changed for project: 34-Spring_Scheduling
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-20 18:27:53.431
+!MESSAGE Boot project ADDED: 34-Spring_Scheduling
