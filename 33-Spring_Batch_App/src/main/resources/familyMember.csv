@@ -1,0 +1,9 @@
+id,firstName,lastName,email,gender,contactNo,country,dob
+1,Pritam ,saw,pritamsaw@gmail.com,male,9934082427,India,01-01-1974
+2,Sumitra,Devi,sumitradevi@gmail.com,female,9943082427,India,27-03-1982
+3,Rita,Devi,ritadevi@gmail.com,female,8709420060,India,03-11-1993
+4,Dewanti,Devi,dewantidevi@gmail.com,female,9931185687,India,31-03-1995
+5,Indradeo ,kumar,indra.deo4353@gmail.com,male,9523134353,India,27-03-1997
+6,Bindul,Devi,bindul.kumari@gmail.com,female,6200662559,India,27-03-1999
+7,Reena,Kumari,reen.kumari@gmail.com,female,9631911927,India,29-11-2001
+8,Krishna,Kumar,krishnakumar@gmail.com,male,9631705702,India,04-04-2004
